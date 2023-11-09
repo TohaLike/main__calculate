@@ -25,5 +25,6 @@
 
    .btn__container {
       grid-column-gap: 30px;
+      text-align: center;
    }
 }
