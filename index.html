@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="./style/adaptive.css">
    <title>Calculate</title>
 </head>
-
 <body>
-   <div class="matrix">
-      <div class="matrix__container">
-         <div class="matrix__main">
+   <div class="container">
 
-            <div class="first__string">
-               <input class="input__one mat" type="number" placeholder="a11" value="4">
-               <input class="input__two mat" type="number" placeholder="a12" value="4">
-               <input class="input__three mat" type="number" placeholder="a13" value="4">
+      <div class="matrix">
+         <div class="matrix__container">
+            <div class="matrix__main">
+               <div class="first__string matrix__block">
+                  <input class="input__one mat" type="number" placeholder="a11">
+                  <input class="input__two mat" type="number" placeholder="a12">
+                  <input class="input__three mat" type="number" placeholder="a13">
+               </div>
+
+               <div class="second__string matrix__block">
+                  <input class="input__four mat" type="number" placeholder="a21">
+                  <input class="input__five mat" type="number" placeholder="a22">
+                  <input class="input__six mat" type="number" placeholder="a23">
+               </div>
+
+               <div class="third__string matrix__block">
+                  <input class="input__seven mat" type="number" placeholder="a31">
+                  <input class="input__eight mat" type="number" placeholder="a32">
+                  <input class="input__nine mat" type="number" placeholder="a33">
+               </div>
             </div>
 
-            <div class="second__string">
-               <input class="input__four mat" type="number" placeholder="a21" value="4">
-               <input class="input__five mat" type="number" placeholder="a22" value="4">
-               <input class="input__six mat" type="number" placeholder="a23" value="4">
+            <div class="fourth__string">
+               <div class="result__matrix"></div>
             </div>
 
-            <div class="third__string">
-               <input class="input__seven mat" type="number" placeholder="a31" value="4">
-               <input class="input__eight mat" type="number" placeholder="a32" value="4">
-               <input class="input__nine mat" type="number" placeholder="a33" value="4">
-            </div>
+            <!-- <p class="matrix__equality">=</p> -->
          </div>
-
-
-         <p class="matrix__equality">=</p>         
-         <!-- <input class="input__ten" type="number" placeholder="Result"> -->
-         <div class="result__matrix"></div>
       </div>
 
-
-      <button class="matrix__btn">TryIt</button>
+      <div class="btn__container">
+         <button class="calc__btn calc__btn__seven">7</button>
+         <button class="calc__btn calc__btn__eight">8</button>
+         <button class="calc__btn calc__btn__nine">9</button>
+         <button class="calc__btn calc__btn__four">4</button>
+         <button class="calc__btn calc__btn__five">5</button>
+         <button class="calc__btn calc__btn__six">6</button>
+         <button class="calc__btn calc__btn__one">1</button>
+         <button class="calc__btn calc__btn__two">2</button>
+         <button class="calc__btn calc__btn__three">3</button>
+         <button class="calc__btn calc__btn__zero">0</button>
+         <button class="calc__btn calc__btn__comma">,</button>
+         <button class="calc__btn calc__btn__equal">=</button>
+      </div>
    </div>
 
 
+   <!-- <button class="matrix__btn">TryIt</button> -->
    <script src="./app.js"></script>
 </body>
-
 </html>

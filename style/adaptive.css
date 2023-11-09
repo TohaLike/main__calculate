@@ -1,0 +1,14 @@
+@media only screen and (max-width: 430px) {
+   .container {
+      display: grid;
+      justify-content: center;
+   }
+
+   .matrix__block {
+      grid-column-gap: 10px;
+   }
+
+   .btn__container {
+      grid-column-gap: 30px;
+   }
+}
