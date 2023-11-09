@@ -1,4 +1,5 @@
 @media all and (-webkit-min-device-pixel-ratio:0) {
+
    input[type=number]::-webkit-inner-spin-button,
    input[type=number]::-webkit-outer-spin-button {
       -webkit-appearance: none;
@@ -83,5 +84,12 @@
       font-size: 44px;
       text-align: center;
       grid-column-gap: 15px;
+      display: inline-flex;
+      /* Используйте inline-flex вместо flex для инлайнового элемента */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* Выравнивание текста по центру */
+      padding: 10px 15px;
    }
 }

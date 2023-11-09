@@ -25,9 +25,5 @@
 
    .btn__container {
       grid-column-gap: 30px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
    }
 }
