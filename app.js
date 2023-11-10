@@ -21,11 +21,8 @@ const calcBtnNine = document.querySelector('.calc__btn__nine')
 const calcBtnZero = document.querySelector('.calc__btn__zero')
 const calcBtnComma = document.querySelector('.calc__btn__comma')
 const calcBtnEqual = document.querySelector('.calc__btn__equal')
-
-
-// window.addEventListener('load', () => {
-//    return resultMatrix.innerHTML = 0
-// })
+const calcBtnMinus = document.querySelector('.calc__btn__minus')
+const calcBtnDelete = document.querySelector('.calc__btn__delete')
 
 function matrixResult() {
    const a11 = parseFloat(inputOne.value)
@@ -45,8 +42,6 @@ function matrixResult() {
    createResultBlock.className = `result__matrix__main`
    resultMatrix.innerHTML = ''
    resultMatrix.appendChild(createResultBlock)
-
-   console.log(a11)
 }
 
 
@@ -121,17 +116,21 @@ function keyBoard(input) {
    calcBtnNine.onclick = () => {
       input.value += 9;
    }
-   calcBtnZero.onclick = () => {
-      input.value += 0;
-   }
    calcBtnComma.onclick = () => {
       input.value += '.'
       input.value = input.value.replace(/\./g, ',')
    }
-}
+   calcBtnMinus.onclick = () => {
+      input.value += '-';
+   }
 
-function replacePoint(inputPoint) {
-   return inputPoint.split(' ')
+   // calcBtnDelete.onclick = () => {
+   //    let getNum = input.value
+   //    let splitNum = getNum.split('')
+   //    for (let i = 0; i < splitNum.length; i++) {
+   //       console.log(splitNum[i].indexOf())
+   //    }
+   // }
 }
 
 
