@@ -9,7 +9,96 @@ const inputEight = document.querySelector('.input__eight')
 const inputNine = document.querySelector('.input__nine')
 const inputTen = document.querySelector('.input__ten')
 const resultMatrix = document.querySelector('.result__matrix')
+
+const calcBtnOne = document.querySelector('.calc__btn__one')
+const calcBtnTwo = document.querySelector('.calc__btn__two')
+const calcBtnThree = document.querySelector('.calc__btn__three')
+const calcBtnFour = document.querySelector('.calc__btn__four')
+const calcBtnFive = document.querySelector('.calc__btn__five')
+const calcBtnSix = document.querySelector('.calc__btn__six')
+const calcBtnSeven = document.querySelector('.calc__btn__seven')
+const calcBtnEight = document.querySelector('.calc__btn__eight')
+const calcBtnNine = document.querySelector('.calc__btn__nine')
+const calcBtnZero = document.querySelector('.calc__btn__zero')
+const calcBtnComma = document.querySelector('.calc__btn__comma')
 const calcBtnEqual = document.querySelector('.calc__btn__equal')
+
+
+inputOne.addEventListener('mousedown', () => {
+   keyBoard(inputOne)
+})
+
+inputTwo.addEventListener('mousedown', () => {
+   keyBoard(inputTwo)
+})
+
+inputThree.addEventListener('mousedown', () => {
+   keyBoard(inputThree)
+})
+
+inputFour.addEventListener('mousedown', () => {
+   keyBoard(inputFour)
+})
+
+inputFive.addEventListener('mousedown', () => {
+   keyBoard(inputFive)
+})
+
+inputSix.addEventListener('mousedown', () => {
+   keyBoard(inputSix)
+})
+
+inputSeven.addEventListener('mousedown', () => {
+   keyBoard(inputSeven)
+})
+
+inputEight.addEventListener('mousedown', () => {
+   keyBoard(inputEight)
+})
+
+inputNine.addEventListener('mousedown', () => {
+   keyBoard(inputNine)
+})
+
+
+function keyBoard(input) {
+   calcBtnOne.onclick = () => {
+      input.value += 1;
+   }
+   calcBtnTwo.onclick = () => {
+      input.value += 2;
+   }
+   calcBtnThree.onclick = () => {
+      input.value += 3;
+   }
+   calcBtnFour.onclick = () => {
+      input.value += 4;
+   }
+   calcBtnFive.onclick = () => {
+      input.value += 5;
+   }
+   calcBtnSix.onclick = () => {
+      input.value += 6;
+   }
+   calcBtnSeven.onclick = () => {
+      input.value += 7;
+   }
+   calcBtnEight.onclick = () => {
+      input.value += 8;
+   }
+   calcBtnNine.onclick = () => {
+      input.value += 9;
+   }
+   calcBtnZero.onclick = () => {
+      input.value += 0;
+   }
+
+   calcBtnComma.onclick = () => {
+      input.value += ',';
+   }
+}
+
+
 
 window.addEventListener('load', () => {
    return resultMatrix.innerHTML = 0
@@ -27,7 +116,7 @@ function matrix() {
    const a33 = parseInt(inputNine.value)
 
    let result = a11 * a22 * a33 + a12 * a23 * a31 + a13 * a21 * a32 -
-   a13 * a22 * a31 - a11 * a23 * a32 - a12 * a21 * a33;
+      a13 * a22 * a31 - a11 * a23 * a32 - a12 * a21 * a33;
 
    return result
 }
@@ -46,14 +135,19 @@ function matrixResult() {
    let createResultBlock = document.createElement('div')
    createResultBlock.textContent = `${a11 * a22 * a33} + ${a12 * a23 * a31} 
    + ${a13 * a21 * a32} - ${a13 * a22 * a31} - ${a11 * a23 * a32} - ${a12 * a21 * a33} = ${matrix()}`
-   createResultBlock.className = `result__matrix__main`   
+   createResultBlock.className = `result__matrix__main`
    resultMatrix.innerHTML = ''
    resultMatrix.appendChild(createResultBlock)
 }
 
 
-calcBtnEqual.addEventListener('mousedown', () => {  
+calcBtnEqual.addEventListener('mousedown', () => {
    return matrixResult()
 })
-   
+
+
+
+
+
+
 

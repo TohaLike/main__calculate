@@ -85,11 +85,10 @@
       text-align: center;
       grid-column-gap: 15px;
       display: inline-flex;
-      /* Используйте inline-flex вместо flex для инлайнового элемента */
       align-items: center;
       justify-content: center;
       text-align: center;
-      /* Выравнивание текста по центру */
       padding: 10px 15px;
+      user-select: none;
    }
 }
