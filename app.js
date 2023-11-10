@@ -9,7 +9,6 @@ const inputEight = document.querySelector('.input__eight')
 const inputNine = document.querySelector('.input__nine')
 const inputTen = document.querySelector('.input__ten')
 const resultMatrix = document.querySelector('.result__matrix')
-
 const calcBtnOne = document.querySelector('.calc__btn__one')
 const calcBtnTwo = document.querySelector('.calc__btn__two')
 const calcBtnThree = document.querySelector('.calc__btn__three')
@@ -22,11 +21,7 @@ const calcBtnNine = document.querySelector('.calc__btn__nine')
 const calcBtnZero = document.querySelector('.calc__btn__zero')
 const calcBtnComma = document.querySelector('.calc__btn__comma')
 const calcBtnEqual = document.querySelector('.calc__btn__equal')
-const mat = document.querySelector('.mat')
 
-document.getElementById('mat').addEventListener('focus', function () {
-   document.getElementById('mat').blur()
-})
 
 
 inputOne.addEventListener('mousedown', () => {
@@ -97,7 +92,6 @@ function keyBoard(input) {
    calcBtnZero.onclick = () => {
       input.value += 0;
    }
-
    calcBtnComma.onclick = () => {
       input.value += ',';
    }
