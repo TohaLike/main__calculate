@@ -6,10 +6,6 @@
       margin-top: 40px;
    }
 
-   .matrix__main {
-      grid-row: 1;
-   }
-
    .btn__container {
       grid-column-gap: 13px;
    }
