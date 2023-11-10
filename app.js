@@ -22,6 +22,11 @@ const calcBtnNine = document.querySelector('.calc__btn__nine')
 const calcBtnZero = document.querySelector('.calc__btn__zero')
 const calcBtnComma = document.querySelector('.calc__btn__comma')
 const calcBtnEqual = document.querySelector('.calc__btn__equal')
+const mat = document.querySelector('.mat')
+
+document.getElementById('mat').addEventListener('focus', function () {
+   document.getElementById('mat').blur()
+})
 
 
 inputOne.addEventListener('mousedown', () => {
