@@ -6,10 +6,6 @@
       margin-top: 40px;
    }
 
-   .matrix__block {
-      grid-column-gap: 10px;
-   }
-
    .matrix__main {
       grid-row: 1;
    }
