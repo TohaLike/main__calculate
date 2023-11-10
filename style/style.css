@@ -34,7 +34,7 @@ body {
    grid-template-columns: repeat(3, 120px);
    grid-template-rows: repeat(3, 12px);
    grid-column-gap: 7px;
-   grid-row-gap: 25px;
+   grid-row-gap: 20px;
 }
 
 .mat {
@@ -58,12 +58,8 @@ body {
    color: transparent;
 }
 
-.result__matrix {
-   font-size: 30px;
-}
-
 .result__matrix__main {
-   font-size: 30px;
+   font-size: 17px;
 }
 
 /* Buttons */
