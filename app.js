@@ -25,27 +25,57 @@ const calcBtnMinus = document.querySelector('.calc__btn__minus')
 const calcBtnDelete = document.querySelector('.calc__btn__delete')
 
 function matrixResult() {
-   const a11 = parseFloat(inputOne.value)
-   const a12 = parseFloat(inputTwo.value)
-   const a13 = parseFloat(inputThree.value)
-   const a21 = parseFloat(inputFour.value)
-   const a22 = parseFloat(inputFive.value)
-   const a23 = parseFloat(inputSix.value)
-   const a31 = parseFloat(inputSeven.value)
-   const a32 = parseFloat(inputEight.value)
-   const a33 = parseFloat(inputNine.value)
+   const a11 = replaceDout(inputOne.value)
+   const a12 = replaceDout(inputTwo.value)
+   const a13 = replaceDout(inputThree.value)
+   const a21 = replaceDout(inputFour.value)
+   const a22 = replaceDout(inputFive.value)
+   const a23 = replaceDout(inputSix.value)
+   const a31 = replaceDout(inputSeven.value)
+   const a32 = replaceDout(inputEight.value)
+   const a33 = replaceDout(inputNine.value)
+
+   let resultOne = a11 * a22 * a33
+   let resultTwo = a12 * a23 * a31
+   let resultThree = a13 * a21 * a32
+   let resultFour = a13 * a22 * a31
+   let resultFive = a11 * a23 * a32
+   let resultSix = a12 * a21 * a33
+   let mainResult = a11 * a22 * a33 + a12 * a23 * a31 + a13 * a21 * a32
+    - a13 * a22 * a31 - a11 * a23 * a32 - a12 * a21 * a33;
 
    let createResultBlock = document.createElement('div')
-   createResultBlock.textContent = `${a11 * a22 * a33} + ${a12 * a23 * a31} 
-   + ${a13 * a21 * a32} - ${a13 * a22 * a31} - ${a11 * a23 * a32} - ${a12 * a21 * a33} =
-   ${a11 * a22 * a33 + a12 * a23 * a31 + a13 * a21 * a32 - a13 * a22 * a31 - a11 * a23 * a32 - a12 * a21 * a33}`
+   createResultBlock.textContent = `${replaceComma(resultOne.toString())} + ${resultTwo} + ${resultThree} 
+   - ${resultFour} - ${resultFive} - ${resultSix} = ${mainResult}`
    createResultBlock.className = `result__matrix__main`
    resultMatrix.innerHTML = ''
    resultMatrix.appendChild(createResultBlock)
 }
 
 
+function replaceDout(rep) {
+   let splitNum = rep.split('')
+   for (let i = 0; i < splitNum.length; i++) {
+      if (rep[i] === ',') {
+         splitNum[i] = '.'
+      }
+   }
+   return splitNum.join('')
+}
+
+function replaceComma(rep) {
+   let splitNum = rep.split('')
+   for (let i = 0; i < splitNum.length; i++) {
+      if (rep[i] === '.') {
+         splitNum[i] = ','
+      }
+   }
+   return splitNum.join('')
+}
+
+
 calcBtnEqual.addEventListener('mousedown', () => {
+   console.log(replaceComma(inputOne.value))
    return matrixResult()
 })
 
@@ -124,13 +154,13 @@ function keyBoard(input) {
       input.value += '-';
    }
 
-   // calcBtnDelete.onclick = () => {
-   //    let getNum = input.value
-   //    let splitNum = getNum.split('')
-   //    for (let i = 0; i < splitNum.length; i++) {
-   //       console.log(splitNum[i].indexOf())
-   //    }
-   // }
+   calcBtnDelete.onclick = () => {
+      let getNum = input.value
+
+      if (getNum.length > 0) {
+         input.value = getNum.slice(0, -1);
+      }
+   }
 }
 
 
