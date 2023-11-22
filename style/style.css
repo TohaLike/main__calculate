@@ -11,6 +11,13 @@ body {
    user-select: none;
 }
 
+.matrix__calc {
+   display: grid;
+   grid-template-columns: repeat(3, 120px);
+   grid-template-rows: repeat(8, 56px);
+   user-select: none;
+}
+
 .matrix {
    grid-row-gap: 15px;
 }
@@ -58,7 +65,7 @@ body {
 }
 
 /* Buttons */
-.btn__container {
+.btn__container__mat {
    display: grid;
    text-align: center;
    grid-template-columns: repeat(4, 80px);
@@ -96,11 +103,8 @@ body {
 }
 
 .calc__btn__zero {
-   grid-column: 1/3;
+   grid-column: 1/2;
    grid-row: 4/5;
-   display: flex;
-   justify-content: start;
-   padding: 30px;
 }
 
 .calc__btn__comma {
@@ -112,6 +116,11 @@ body {
    grid-column: 4;
    grid-row: 4/5;
    background-color: #ff9f0a;
+}
+
+.calc__btn__another {
+   grid-column: 2;
+   grid-row: 4/5;
 }
 
 .calc__btn__delete {
@@ -126,4 +135,70 @@ body {
    grid-row: 1/1;
    color: #000000;
    background-color: #a5a5a5;
+}
+
+
+/* default calc */
+.default__calc {
+   display: grid;
+   grid-template-columns: repeat(7, 100px);
+   grid-template-rows: repeat(10, 38.30px);
+}
+
+.defalt__main {
+   grid-column: 1;
+   grid-row: 3;
+   margin-top: 25px;
+   margin-left: -17px;
+   font-size: 82px;
+}
+/* 
+.defalt__main input {
+   caret-color: transparent;
+   /* Делаем цвет курсора прозрачным */
+   /* color: #ffffff; */
+   /* Делаем цвет текста прозрачным (опционально) */
+/* } */
+ 
+
+.btn__container__default {
+   display: grid;
+   text-align: center;
+   grid-template-columns: repeat(4, 80px);
+   grid-template-rows: repeat(4, 80px);
+   grid-column-gap: 13px;
+   grid-row-gap: 10px;
+   grid-column: 1;
+   grid-row: 7;
+   color: #ffffff;
+}
+
+.orange__value {
+   background-color: #ff9f0a;
+}
+
+.grey__value {
+   background-color: #a5a5a5;
+   color: #000000;
+}
+
+.result__default {
+   margin: 0;
+   text-align: end;
+   user-select: none;
+   width: 355px;
+   outline: none;
+   background: none;
+   color: #ffffff;
+   border: none;
+}
+
+.calc__btn__another__default {
+   color: rgba(0, 0, 0, 0.2);
+}
+
+.calc__btn__zero__default {
+   display: flex;
+   justify-content: start;
+   width: 160px;
 }

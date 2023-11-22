@@ -1,3 +1,5 @@
+const defaultCalc = document.querySelector('.default__calc')
+const matrixCalc = document.querySelector('.matrix__calc')
 const inputOne = document.querySelector('.input__one')
 const inputTwo = document.querySelector('.input__two')
 const inputThree = document.querySelector('.input__three')
@@ -24,6 +26,15 @@ const calcBtnEqual = document.querySelector('.calc__btn__equal')
 const calcBtnMinus = document.querySelector('.calc__btn__minus')
 const calcBtnDelete = document.querySelector('.calc__btn__delete')
 const calcBtnDeleteAll = document.querySelector('.calc__btn__delete__all')
+const calcBtnAnother = document.querySelector('.calc__btn__another')
+
+
+// window.addEventListener('load', () => {
+//    resultDefaultInput.value = ''   
+//    keyBoardDefault(resultDefaultInput)
+//    matrixCalc.style.display = "none"
+// })
+
 
 function matrixResult() {
    const a11 = replaceDout(inputOne.value)
@@ -177,4 +188,9 @@ calcBtnDeleteAll.addEventListener('mousedown', () => {
    inputEight.value = ''
    inputNine.value = ''
    resultMatrix.innerHTML = ''
+})
+
+calcBtnAnother.addEventListener('mousedown', () => {
+   defaultCalc.style.display = "grid"
+   matrixCalc.style.display = "none"
 })
