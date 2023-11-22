@@ -76,10 +76,8 @@ function replaceComma(rep) {
 
 
 calcBtnEqual.addEventListener('mousedown', () => {
-   // console.log(replaceComma(inputOne.value))
    return matrixResult()
 })
-
 
 
 inputOne.addEventListener('mousedown', () => {
@@ -178,4 +176,5 @@ calcBtnDeleteAll.addEventListener('mousedown', () => {
    inputSeven.value = ''
    inputEight.value = ''
    inputNine.value = ''
+   resultMatrix.innerHTML = ''
 })
