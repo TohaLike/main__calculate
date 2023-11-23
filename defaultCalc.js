@@ -24,7 +24,6 @@ const calcBtnPluse = document.querySelector('.calc__btn__pluse')
 const calcBtnDeleteDefault = document.querySelector('.calc__btn__delete__default')
 
 const calcBtnAnotherDefault = document.querySelector('.calc__btn__another__default')
-
 const calcBtnEqualDefault = document.querySelector('.calc__btn__equal__default')
 
 

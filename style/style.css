@@ -160,8 +160,8 @@ div#maincontent {
 .defalt__main {
    grid-column: 1;
    grid-row: 3;
-   margin-top: 25px;
-   margin-left: -17px;
+   margin-top: 10px;
+   margin-left: -23px;
    font-size: 82px;
 }
 
@@ -170,7 +170,6 @@ div#maincontent {
    caret-color: transparent;
    color: #ffffff;
 }
-
 
 .btn__container__default {
    display: grid;
@@ -200,7 +199,7 @@ div#maincontent {
    width: 355px;
    outline: none;
    background: none;
-   color: #ffffff;
+   font-size: 75px;
    border: none;
 }
 
