@@ -10,10 +10,8 @@
 
    .defalt__main {
       display: grid;
-      justify-content: start;
-      /* grid-column: 1; */
+      justify-content: center;
       grid-row: 3;
-      /* margin-top: 10px; */
       margin-left: -10px;
       font-size: 82px;
    }

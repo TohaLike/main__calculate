@@ -206,7 +206,7 @@ div#maincontent {
 
 .calc__btn__zero__default {
    display: flex;
-   justify-content: start;
+   justify-content: center;
    width: 166px;
    padding-left: 28px;
 }
