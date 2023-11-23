@@ -7,13 +7,16 @@
    .btn__container__mat {
       grid-column-gap: 13px;
    }
-/* 
+
    .defalt__main {
-      grid-column: 1;
-      margin-top: 10px;
-      margin-left: 13px;
+      display: grid;
+      justify-content: start;
+      /* grid-column: 1; */
+      grid-row: 3;
+      /* margin-top: 10px; */
+      margin-left: -10px;
       font-size: 82px;
-   } */
+   }
 
 }
 
