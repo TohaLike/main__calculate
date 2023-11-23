@@ -128,7 +128,7 @@ div#maincontent {
    grid-column: 4;
    grid-row: 4/5;
    background-color: #ff9f0a;
-   padding-top: 10px;
+   padding-top: 9px;
 }
 
 .calc__btn__another {
