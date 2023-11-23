@@ -114,7 +114,7 @@ div#maincontent {
    display: flex;
    justify-content: start;
    width: 166px;
-   border: 1px solid #ff9f0a;
+   padding-left: 28px;
 }
 
 .calc__btn__comma {
@@ -159,10 +159,7 @@ div#maincontent {
 .defalt__main {
    display: grid;
    justify-content: start;
-   /* grid-column: 1; */
    grid-row: 3;
-   /* margin-top: 10px; */
-   /* margin-left: 13px; */
    font-size: 82px;
 }
 
@@ -196,7 +193,7 @@ div#maincontent {
    margin: 0;
    text-align: end;
    user-select: none;
-   width: 305px;   
+   width: 305px;
    outline: none;
    background: none;
    font-size: 75px;
@@ -211,5 +208,5 @@ div#maincontent {
    display: flex;
    justify-content: start;
    width: 166px;
-   border: 1px solid #ff9f0a;
+   padding-left: 28px;
 }
