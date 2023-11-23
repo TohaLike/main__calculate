@@ -161,7 +161,7 @@ div#maincontent {
    grid-column: 1;
    grid-row: 3;
    margin-top: 10px;
-   margin-left: -23px;
+   /* margin-left: -23px; */
    font-size: 82px;
 }
 
@@ -195,7 +195,7 @@ div#maincontent {
    margin: 0;
    text-align: end;
    user-select: none;
-   width: 355px;
+   width: 330px;   
    outline: none;
    background: none;
    font-size: 75px;
