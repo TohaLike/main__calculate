@@ -31,6 +31,7 @@ const calcBtnEqualDefault = document.querySelector('.calc__btn__equal__default')
 window.addEventListener('load', () => {
    resultDefaultInput.value = ''   
    keyBoardDefault(resultDefaultInput)
+   resultDefaultInput.value = 0
 })
 
 calcBtnDeleteDefault.addEventListener('mousedown', () => {
