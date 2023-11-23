@@ -4,6 +4,12 @@ body {
    color: #ffffff;
 }
 
+div#maincontent {
+   position:relative;
+   padding: 20px;
+   overflow: hidden;
+}
+
 .container {
    display: grid;
    grid-template-columns: repeat(3, 120px);
