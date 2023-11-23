@@ -158,6 +158,8 @@ div#maincontent {
 }
 
 .defalt__main {
+   display: grid;
+   justify-content: start;
    /* grid-column: 1; */
    grid-row: 3;
    /* margin-top: 10px; */
