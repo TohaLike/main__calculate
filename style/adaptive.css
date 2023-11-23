@@ -4,6 +4,14 @@
       justify-content: center;
    }
 
+   .matrix__calc {
+      display: grid;
+      grid-template-columns: repeat(3, 120px);
+      grid-template-rows: repeat(8, 56px);
+      margin-top: 1px;
+      user-select: none;
+   }
+
    .btn__container__mat {
       grid-column-gap: 13px;
    }
