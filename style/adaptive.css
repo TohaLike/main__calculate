@@ -11,7 +11,7 @@
    .defalt__main {
       grid-row: 3;
       margin-top: 10px;
-      margin-left: -40px;
+      /* margin-left: -40px; */
       font-size: 82px;
    }
 
