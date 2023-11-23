@@ -153,12 +153,12 @@ div#maincontent {
 /* default calc */
 .default__calc {
    display: grid;
-   grid-template-columns: repeat(4, 80px);
+   grid-template-columns: repeat(2, 160px);
    grid-template-rows: repeat(10, 38.30px);
 }
 
 .defalt__main {
-   grid-column: 1;
+   /* grid-column: 1; */
    grid-row: 3;
    margin-top: 10px;
    margin-left: 13px;
